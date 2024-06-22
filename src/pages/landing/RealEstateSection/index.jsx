@@ -1,5 +1,13 @@
 import { useEffect, useState } from "react";
 import "./styles.scss";
+import logo from "../../../../public/images/logo-png.png";
+import group from "../../../icons/group.svg"
+import menu from "../../../icons/menu.svg"
+import contact from "../../../icons/contact-us.svg"
+import arrow from "../../../icons/arrow-45.svg"
+import heart from "../../../icons/heart.svg"
+import home from "../../../icons/home.svg"
+import download from "../../../icons/download.svg"
 
 const RealEstateSection = () => {
   const [animate, setAnimate] = useState(false);
@@ -13,14 +21,14 @@ const RealEstateSection = () => {
       <div className="left-box">
         <div className="left-box-header">
           <div className={`icon-box ${animate ? "animate" : ""}`}>
-            <img src="public/images/logo-png.png" alt=""></img>
+            <img src={logo} alt=""></img>
           </div>
           <div className="menu-items-box">
             <div className={`menu-item icon-box ${animate ? "animate" : ""}`}>
-              <img src="src/icons/group.svg" alt="Home Icon" />
+              <img src={group} alt="Home Icon" />
             </div>
             <div className={`menu-item icon-box ${animate ? "animate" : ""}`}>
-              <img src="src/icons/menu.svg" alt="Home Icon" />
+              <img src={menu} alt="Home Icon" />
             </div>
           </div>
         </div>
@@ -36,14 +44,14 @@ const RealEstateSection = () => {
           <div className={`contact-us-wrapper ${animate ? "animate" : ""}`}>
             <div className="fake-icon-box-wrapper">
               <div className="phone-icon-box icon-box">
-                <img src="src/icons/contact-us.svg" />
+                <img src={contact} />
               </div>
             </div>
             <button className="contact-us-button">Contact Us Now</button>
           </div>
           <div className="explore-all-properties-box">
             <div className="arrow-45-box">
-              <img src="src/icons/arrow-45.svg"></img>
+              <img src={arrow}></img>
             </div>
             <span className="explore-all-properties-text">
               Explore All Our Properties
@@ -66,10 +74,10 @@ const RealEstateSection = () => {
           </div>
           <div className="right-box-icons-wrapper">
             <div className="heart-icon-box">
-              <img src="src/icons/heart.svg" />
+              <img src={heart} />
             </div>
             <div className="home-icon-box">
-              <img src="src/icons/home.svg" />
+              <img src={home} />
             </div>
           </div>
         </div>
@@ -78,7 +86,7 @@ const RealEstateSection = () => {
             <span className="catalog-download-text">catalog download </span>
 
             <div className="download-icon-box">
-              <img src="src/icons/download.svg" />
+              <img src={download} />
             </div>
           </div>
         </div>
