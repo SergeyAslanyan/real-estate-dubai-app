@@ -46,8 +46,9 @@ const RealEstateSection = () => {
               <div className="phone-icon-box icon-box">
                 <img src={contact} />
               </div>
+                <span>Contact Us Now</span>
             </div>
-            <button className="contact-us-button">Contact Us Now</button>
+            {/* <div className="contact-us-button">Contact Us Now</div> */}
           </div>
           <div className="explore-all-properties-box">
             <div className="arrow-45-box">
