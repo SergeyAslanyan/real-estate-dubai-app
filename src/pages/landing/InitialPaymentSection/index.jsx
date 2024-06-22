@@ -1,6 +1,9 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useRef, useState } from "react";
 import "./styles.scss";
+import house2 from "../../../icons/house2.svg";
+import key from "../../../icons/key.svg"
+import video from "../../../../public/videos/city-view-video.mp4"
 
 const InitialPaymentSection = ({ expand }) => {
   const [startAnimation, setStartAnimation] = useState(false);
@@ -37,10 +40,10 @@ const InitialPaymentSection = ({ expand }) => {
         }`}
       >
         <div className="icon-box">
-          <img src="src/icons/house2.svg" alt="Home Icon" />
+          <img src={house2} alt="Home Icon" />
         </div>
         <div className="icon-box">
-          <img src="src/icons/key.svg" alt="Key Icon" />
+          <img src={key} alt="Key Icon" />
         </div>
       </div>
 
@@ -53,7 +56,7 @@ const InitialPaymentSection = ({ expand }) => {
           autoPlay
           muted
           loop
-          src="public/videos/city-view-video.mp4"
+          src={video}
           controls
           style={{ width: "100%", height: "100%", pointerEvents: "none" }}
         />
