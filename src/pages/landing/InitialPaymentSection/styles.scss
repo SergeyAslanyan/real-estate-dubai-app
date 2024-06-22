@@ -1,3 +1,5 @@
+$bg-img:url("public/images/city-view.png");
+
 .initial-payments-box-wrapper {
   position: relative;
   background-color: #f8f5f2;
@@ -35,7 +37,7 @@
     width: 50%;
     border-radius: 30px;
     overflow: hidden;
-    background-image: url("public/images/city-view.png");
+    background-image: $bg-img;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
