@@ -41,7 +41,7 @@ $bg-img:url("/public/images/city-view.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
 
     &.startAnimation {
       animation: slideInBottom 1s ease-out forwards;
